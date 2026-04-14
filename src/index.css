@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer components {
+    .hero-text {
+        @apply text-5xl md:text-[250px] font-bold leading-48 max-w-[30ch] text-[#E6D48F];
+    }
+}
+
+@font-face {
+    font-family: "Dazzle";
+    src: url("/fonts/Dazzle_Unicase_Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@theme {
+    --font-display: "Dazzle", sans-serif;
+}
+
+.font-dazzle {
+    font-family: "Dazzle", sans-serif;
+}
+
